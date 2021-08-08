@@ -1,24 +1,19 @@
 <?php
-include "includes/header.php";
-include "includes/container.php";
 include "includes/classes/user.php";
 include "includes/classes/post.php";
-
-if(isset($_POST['post'])){
-    $post=new Post($con, $userLoggedIn);
-    $post->submitPost($_POST['post_text'],'none');
+include "includes/header.php";
+include "includes/container.php";
+if (isset($_POST['post'])) {
+    $post = new Post($con, $userLoggedIn);
+    $post->submitPost($_POST['post_text'], 'none');
     header('Location: index.php?');
     exit;
-
 }
-?>
-<?php
-    
 ?>
 <div class="post_area"><img id="loading" src="icons/loading.gif"></div>
 
 <script>
-    var userLoggedIn = '<?php echo $userLoggedIn;?>';
+    var userLoggedIn = '<?php echo $userLoggedIn; ?>';
     $(document).ready(function() {
         $('#loading').show();
 
@@ -53,7 +48,7 @@ if(isset($_POST['post'])){
                         $('.post_area').find('.nextPage').remove();
                         $('.post_area').find('.noMorePosts').remove();
                         $('#loading').hide();
-                        $('.post_area').append(response);
+                        $('.main_post').append(response);
 
                     }
                 });
@@ -63,17 +58,10 @@ if(isset($_POST['post'])){
 
         });
     });
-
 </script>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-6320734730171698",
-        enable_page_level_ads: true
-    });
-
-</script>
-
+<?php
+include "includes/footer.php";
+?>
 
 </body>
 

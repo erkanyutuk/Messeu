@@ -2,7 +2,10 @@
     font-family: 'Bellota-LightItalic';
     src: url('../font/Bellota-LightItalic.otf');
 }
-
+@font-face {
+    font-family: 'Montserrat-Black.otf';
+    src: url('../font/Montserrat-Black.otf');
+}
 @font-face {
     font-family: 'Bellota-BoldItalic';
     src: url('../font/Bellota-BoldItalic.otf');
