@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Bellota-LightItalic';
+    src: url('../font/Bellota-LightItalic.otf');
+}
+
+@font-face {
+    font-family: 'Bellota-BoldItalic';
+    src: url('../font/Bellota-BoldItalic.otf');
+}
+
+#main {
+    background: url("../images/background/background_register.jpg");
+    background-size: 30%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#main_color{
+    background: #357878;
+    opacity: 0.45;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+input[type="submit"] {
+    background: #0E2F44;
+    border: 1px solid #3498db;
+    border-radius: 7px;
+    font-size: 18px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    width: 40%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-family: 'Bellota-BoldItalic', sans-serif;
+    opacity: 0.85;
+}
+
+input[type="submit"]:hover {
+    opacity: 1;
+    transition:0.3s;
+    cursor: pointer;
+    border: 1px solid #22ffff;
+}
+input[type="text"]{
+    border: 1px solid #e5e5e5;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 29.5%;
+    box-shadow: #22ffff 1px 1px 1px;
+    font-size: 15px;
+    padding: 7px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    
+}
+#last_name{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 1%;
+}
+
+input[type="email"],
+input[type="password"] {
+    border: 1px solid #e5e5e5;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 60%;
+    box-shadow: #22ffff 1px 1px 1px;
+    font-size: 15px;
+    padding: 7px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+}
+.icon {
+    padding: 8px 8px 2px 8px;
+    background: #0E2F44;
+    color: white;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    min-width: 30px;
+    text-align: center;
+    margin: 0px;
+    height: 23px;
+    box-shadow: #22ffff 1px 1px 1px;
+}
+
+
+form {
+    text-align: center;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #0E2F44;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+#input {
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 15%;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.login_box {
+    font-family: 'Bellota-LightItalic', sans-serif;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 35%;
+    top: 15%;
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #22ffff;
+    box-shadow: #226666 5px 5px 50px;
+    z-index: 100;
+
+}
+
+.second {
+    display: none;
+}
+
+.login_header {
+    font-family: 'Bellota-LightItalic', sans-serif;
+    width: 100%;
+    height: 80px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: #0E2F44;
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 20px;
+
+}
+
+.login_header b {
+    font-size: 20px;
+    color: white;
+}
+
+.login_header h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #22ffff;
+    font-family: 'Bellota-BoldItalic', sans-serif;
+    text-shadow: #73b69d 1px 1px 1px;
+}
+
+@media screen and (max-width: 950px) {
+    .login_box {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .login_box {
+        text-align: center;
+        width: 70%;
+        margin: auto;
+    }
+     input[type="text"]{
+        width: 34.5%;
+    }
+    input[type="email"],
+    input[type="password"]{
+        width: 70%;
+        
+    }
+    #input{
+        margin-left: 7.5%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .login_box {
+        max-width: 700px;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        top: 25px;
+    }
+
+    #main {
+        background: black;
+        background-size: :auto;
+        height: 100%;
+    }
+    input[type="text"]{
+        width: 39.5%;
+    }
+    input[type="email"],
+    input[type="password"]{
+        width: 80%;
+        
+    }
+    #input{
+        margin-left: 2.5%;
+    }
+}
